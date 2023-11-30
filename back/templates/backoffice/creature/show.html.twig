@@ -1,0 +1,14 @@
+{# templates/backoffice/creature/creature_detail.html.twig #}
+
+{% extends '@EasyAdmin/default/show.html.twig' %}
+
+{% block content %}
+    {{ parent() }}
+    <h2>Détails de la créature :</h2>
+    <ul>
+        <li>Nom : {{ entity.name }}</li>
+        <li>Résumé : {{ entity.resume }}</li>
+        <li>Description : {{ entity.description }}</li>
+        <!-- Ajoutez ici les autres champs que vous souhaitez afficher -->
+    </ul>
+{% endblock %}
